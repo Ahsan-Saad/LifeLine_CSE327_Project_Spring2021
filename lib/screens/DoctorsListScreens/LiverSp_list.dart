@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:lifeline/colors.dart';
-import 'welcomeScreen.dart';
-import 'doctorsData.dart';
+import 'package:lifeline/screens/welcomeScreen.dart';
+import 'package:lifeline/screens/doctorsData.dart';
 
-class DoctorslistScreen extends StatefulWidget {
+class LiverSp_list extends StatefulWidget {
   @override
-  _DoctorslistScreenState createState() => _DoctorslistScreenState();
+  _LiverSp_listState createState() => _LiverSp_listState();
 }
 
-class _DoctorslistScreenState extends State<DoctorslistScreen> {
+class _LiverSp_listState extends State<LiverSp_list> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,7 +75,7 @@ class _DoctorslistScreenState extends State<DoctorslistScreen> {
                       EdgeInsets.only(left: 10, right: 10, bottom: 20, top: 20),
 
                   child: Text(
-                    "List of heart specialists in Dhaka:",
+                    "List of Liver specialists in Dhaka:",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 22,

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:lifeline/colors.dart';
-import 'welcomeScreen.dart';
-import 'doctorsData.dart';
+import 'package:lifeline/screens/welcomeScreen.dart';
+import 'package:lifeline/screens/doctorsData.dart';
 
-class DoctorslistScreen extends StatefulWidget {
+class HeartSpList extends StatefulWidget {
   @override
-  _DoctorslistScreenState createState() => _DoctorslistScreenState();
+  _HeartSpListState createState() => _HeartSpListState();
 }
 
-class _DoctorslistScreenState extends State<DoctorslistScreen> {
+class _HeartSpListState extends State<HeartSpList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

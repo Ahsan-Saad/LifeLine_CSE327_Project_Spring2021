@@ -10,7 +10,6 @@ class Lifeline extends StatefulWidget {
 }
 
 class _State extends State<Lifeline> {
- 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,7 +18,7 @@ class _State extends State<Lifeline> {
         primaryColor: primaryColor,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home:WelcomeScreen(),
+      home: WelcomeScreen(),
     );
   }
 }

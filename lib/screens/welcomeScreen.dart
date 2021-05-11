@@ -10,6 +10,8 @@ class WelcomeScreen extends StatelessWidget {
       appBar: AppBar(
         //appbar has logo, sign in, log in
         backgroundColor: primaryColor,
+        automaticallyImplyLeading:
+            false, // by using this, when we go back to welcome screen from other screens, there will be no back button on appbar
         title: Container(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -58,7 +60,8 @@ class WelcomeScreen extends StatelessWidget {
                         'log in',
                         style: TextStyle(fontSize: 15),
                       ),
-                      onPressed: () { // with this Navigator we connected the Login button with Login Screen
+                      onPressed: () {
+                        // with this Navigator we connected the Login button with Login Screen
                         Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -83,7 +86,7 @@ class WelcomeScreen extends StatelessWidget {
             color: Colors.blueAccent,
             height: 30,
             width: double.infinity,
-            margin: EdgeInsets.only(left: 30, right: 30, bottom: 0, top: 20),
+            margin: EdgeInsets.only(left: 10, right: 10, bottom: 0, top: 20),
 
             child: Text(
               "Emergency phone numbers",
@@ -100,10 +103,10 @@ class WelcomeScreen extends StatelessWidget {
             color: Colors.blue,
             height: 300,
             width: double.infinity,
-            margin: EdgeInsets.only(top: 0, left: 30, right: 30, bottom: 30),
+            margin: EdgeInsets.only(top: 0, left: 10, right: 10, bottom: 30),
             child: SingleChildScrollView(
               child: Text(
-                "  \n \n phone number 1 \n phone number 2 \n phone number 3 \n phone number 4 \n phone number 5 \n phone number 6 \n phone number 7 \n phone number 8 \n phone number 9 \n phone number 10 \n phone number 11 \n phone number 12",
+                "   \n phone number 1 \n phone number 2 \n phone number 3 \n phone number 4 \n phone number 5 \n phone number 6 \n phone number 7 \n phone number 8 \n phone number 9 \n phone number 10 \n phone number 11 \n phone number 12",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 25,
@@ -116,7 +119,7 @@ class WelcomeScreen extends StatelessWidget {
             color: bloodDonationBoxColor,
             height: 30,
             width: double.infinity,
-            margin: EdgeInsets.only(left: 30, right: 30, bottom: 0),
+            margin: EdgeInsets.only(left: 10, right: 10, bottom: 0),
 
             child: Text(
               "Blood donation Section",
@@ -133,7 +136,7 @@ class WelcomeScreen extends StatelessWidget {
             color: bloodDonationBoxColor,
             height: 40,
             width: double.infinity,
-            margin: EdgeInsets.only(left: 30, right: 30, top: 0, bottom: 15),
+            margin: EdgeInsets.only(left: 10, right: 10, top: 0, bottom: 15),
 
             child: Text(
               " Are you a seeker or a donor?",
@@ -153,7 +156,7 @@ class WelcomeScreen extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      width: 180,
+                      width: 200,
                       height: 50,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(15),
@@ -172,7 +175,7 @@ class WelcomeScreen extends StatelessWidget {
                   children: [
                     Container(
                       //this container has the button "I'm a donor"
-                      width: 180,
+                      width: 200,
                       height: 50,
 
                       child: ClipRRect(
@@ -213,7 +216,7 @@ class WelcomeScreen extends StatelessWidget {
             color: primaryColor,
             height: 140,
             width: double.infinity,
-            margin: EdgeInsets.only(top: 0, right: 30, left: 30, bottom: 30),
+            margin: EdgeInsets.only(top: 0, right: 10, left: 0, bottom: 30),
             child: SingleChildScrollView(
               child: Text(
                 " This is the description box \n This is the description box \n This is the description box \n This is the description box \n This is the description box \n This is the description box \n This is the description box \n This is the description box \n  ",

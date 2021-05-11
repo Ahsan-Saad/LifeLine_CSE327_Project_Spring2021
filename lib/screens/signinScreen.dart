@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:lifeline/colors.dart';
+import 'package:lifeline/screens/dashboardScreen.dart';
 import 'loginScreen.dart';
 // import 'package:lifeline/colors.dart';
 
-class SigninScreen  extends StatefulWidget {
+class SigninScreen extends StatefulWidget {
   @override
   _State createState() => _State();
 }
@@ -11,7 +12,7 @@ class SigninScreen  extends StatefulWidget {
 class _State extends State<SigninScreen> {
   @override
   Widget build(BuildContext context) {
-   return Scaffold(
+    return Scaffold(
       backgroundColor: primaryColor,
       appBar: AppBar(
         title: Text("Sign in Page"),
@@ -20,15 +21,16 @@ class _State extends State<SigninScreen> {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.only(top: 60.0),
+              padding: const EdgeInsets.only(top: 20.0),
               child: Center(
                 child: Container(
-                    width: 350,
-                    height: 200,
-                    /*decoration: BoxDecoration(
+                  width: 350,
+                  height: 400,
+                  /*decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(50.0)),*/
-                    child: Image.asset('assets/logo.png'),),
+                  child: Image.asset('images/everylife.png'),
+                ),
               ),
             ),
             Padding(
@@ -46,7 +48,6 @@ class _State extends State<SigninScreen> {
                   left: 15.0, right: 15.0, top: 15, bottom: 0),
               //padding: EdgeInsets.symmetric(horizontal: 15),
               child: TextField(
-
                 obscureText: true,
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
@@ -64,15 +65,19 @@ class _State extends State<SigninScreen> {
             //   ),
             // ),
             Container(
-              margin: EdgeInsets.only(top:25),
+              margin: EdgeInsets.only(top: 25),
               height: 50,
               width: 250,
               decoration: BoxDecoration(
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
               child: FlatButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //     context, MaterialPageRoute(builder: (_) => HomePage()));
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => DashboardScreen(),
+                    ),
+                  );
                 },
                 child: Text(
                   'Sign in',
@@ -84,16 +89,16 @@ class _State extends State<SigninScreen> {
               height: 130,
             ),
             Text('Already have an account?'),
-             FlatButton(
-              onPressed: (){
+            FlatButton(
+              onPressed: () {
                 Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) {
-                              return LoginScreen();
-                            },
-                          ),
-                        );
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LoginScreen();
+                    },
+                  ),
+                );
               },
               child: Text(
                 'Log in',
@@ -104,26 +109,7 @@ class _State extends State<SigninScreen> {
         ),
       ),
     );
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
     // return Scaffold(
     //   appBar: AppBar(
     //     //appbar has logo, sign in, log in
@@ -149,14 +135,14 @@ class _State extends State<SigninScreen> {
     //   body: Column(
     //     children: [
     //       Container(
-              
+
     //           width: double.infinity,
     //           height: 400,
     //           child: Stack(
     //             alignment: Alignment.center,
     //             children: <Widget>[
     //               Positioned(child: Image.asset("assets/logo.png"),
-                  
+
     //               )
     //             ],
     //           )),
