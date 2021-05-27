@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:lifeline/colors.dart';
 import 'package:lifeline/screens/signinScreen.dart';
+import 'bloodDonorScreen.dart';
+import 'bloodSeekerScreen.dart';
 import 'loginScreen.dart';
+import 'bloodSeekerScreen.dart';
+import 'bloodDonorScreen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -106,10 +110,10 @@ class WelcomeScreen extends StatelessWidget {
             margin: EdgeInsets.only(top: 0, left: 10, right: 10, bottom: 30),
             child: SingleChildScrollView(
               child: Text(
-                "   \n phone number 1 \n phone number 2 \n phone number 3 \n phone number 4 \n phone number 5 \n phone number 6 \n phone number 7 \n phone number 8 \n phone number 9 \n phone number 10 \n phone number 11 \n phone number 12",
+                "\nLabaid Hospital, Uttara: \n017XXXXXXXX \n\nSquare Hospital, Mirpur: \n017XXXXXXXX \n\nHolylab Hospital, Dhanmondi: 017XXXXXXXX \n\nPopular Hospital, Panthapath: 017XXXXXXXX \n\nSquare Hospital, Mohammadpur: 017XXXXXXXX \n\nLabaid hospital, Puran Dhaka: 017XXXXXXXX",
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 25,
+                  fontSize: 21,
                 ),
               ),
             ),
@@ -165,7 +169,17 @@ class WelcomeScreen extends StatelessWidget {
                             'I\'m a seeker',
                             style: TextStyle(fontSize: 25),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            // with this Navigator we connected the Login button with Login Screen
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return SeekerScreen();
+                                },
+                              ),
+                            );
+                          },
                         ),
                       ),
                     ),
@@ -185,7 +199,17 @@ class WelcomeScreen extends StatelessWidget {
                             'I\'m a donor',
                             style: TextStyle(fontSize: 25),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            // with this Navigator we connected the Login button with Login Screen
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return DonorScreen();
+                                },
+                              ),
+                            );
+                          },
                         ),
                       ),
                     ),
@@ -219,12 +243,12 @@ class WelcomeScreen extends StatelessWidget {
             margin: EdgeInsets.only(top: 0, right: 10, left: 0, bottom: 30),
             child: SingleChildScrollView(
               child: Text(
-                " This is the description box \n This is the description box \n This is the description box \n This is the description box \n This is the description box \n This is the description box \n This is the description box \n This is the description box \n  ",
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 22,
-                ),
-              ),
+                  "Welcome to Lifeline! \n \nLifeline is built so that the users can get easy access to Doctor's information all over Dhaka city. \n\nLifeline provides Emergency cell numbers, working hours, Hospital locations of many well reputed doctors all across Dhaka. \n\nIt also contains emergency numbers of hospitals all over Dhaka.",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 22,
+                  ),
+                  textAlign: TextAlign.center),
             ),
           ),
         ], //children

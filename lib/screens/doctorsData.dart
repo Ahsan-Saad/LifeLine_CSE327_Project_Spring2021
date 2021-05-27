@@ -20,16 +20,16 @@ class DoctorsData extends StatelessWidget {
               Image.asset(
                 'images/profilePic.png',
                 fit: BoxFit.contain,
-                height: 200,
+                height: 150,
               ),
             ],
           ),
           Column(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 10),
-                width: 290,
-                height: 200,
+                margin: EdgeInsets.only(top: 10, left: 10),
+                width: 260,
+                height: 230,
                 color: Colors.grey,
                 child: ListView(
                   children: <Widget>[
