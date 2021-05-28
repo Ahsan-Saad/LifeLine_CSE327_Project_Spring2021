@@ -26,7 +26,7 @@ class WelcomeScreen extends StatelessWidget {
                   Image.asset(
                     'assets/logo.png',
                     fit: BoxFit.contain,
-                    height: 32,
+                    height: 28,
                   ),
                 ],
               ),
@@ -110,7 +110,7 @@ class WelcomeScreen extends StatelessWidget {
             margin: EdgeInsets.only(top: 0, left: 10, right: 10, bottom: 30),
             child: SingleChildScrollView(
               child: Text(
-                "\nLabaid Hospital, Uttara: \n017XXXXXXXX \n\nSquare Hospital, Mirpur: \n017XXXXXXXX \n\nHolylab Hospital, Dhanmondi: 017XXXXXXXX \n\nPopular Hospital, Panthapath: 017XXXXXXXX \n\nSquare Hospital, Mohammadpur: 017XXXXXXXX \n\nLabaid hospital, Puran Dhaka: 017XXXXXXXX",
+                "\n Labaid Hospital, Uttara: \n 017XXXXXXXX \n\n Square Hospital, Mirpur: \n 017XXXXXXXX \n\n Holylab Hospital, Dhanmondi: \n 017XXXXXXXX \n\n Popular Hospital, Panthapath: \n 017XXXXXXXX \n\n Square Hospital, Mohammadpur: \n 017XXXXXXXX \n\n Labaid hospital, Puran Dhaka: \n 017XXXXXXXX",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 21,
@@ -160,7 +160,7 @@ class WelcomeScreen extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      width: 200,
+                      width: 190,
                       height: 50,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(15),
@@ -189,7 +189,7 @@ class WelcomeScreen extends StatelessWidget {
                   children: [
                     Container(
                       //this container has the button "I'm a donor"
-                      width: 200,
+                      width: 190,
                       height: 50,
 
                       child: ClipRRect(
@@ -238,7 +238,7 @@ class WelcomeScreen extends StatelessWidget {
           Container(
             //This container has the description of the app
             color: primaryColor,
-            height: 140,
+            height: 80,
             width: double.infinity,
             margin: EdgeInsets.only(top: 0, right: 10, left: 0, bottom: 30),
             child: SingleChildScrollView(

@@ -21,7 +21,7 @@ class _State extends State<SigninScreen> {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.only(top: 20.0),
+              padding: const EdgeInsets.only(top: 1.0),
               child: Center(
                 child: Container(
                   width: 350,
@@ -65,7 +65,7 @@ class _State extends State<SigninScreen> {
             //   ),
             // ),
             Container(
-              margin: EdgeInsets.only(top: 25),
+              margin: EdgeInsets.only(top: 15),
               height: 50,
               width: 250,
               decoration: BoxDecoration(
@@ -86,7 +86,7 @@ class _State extends State<SigninScreen> {
               ),
             ),
             SizedBox(
-              height: 130,
+              height: 16,
             ),
             Text('Already have an account?'),
             FlatButton(

@@ -21,14 +21,14 @@ class SeekerScreen extends StatelessWidget {
                   Image.asset(
                     'assets/logo.png',
                     fit: BoxFit.contain,
-                    height: 32,
+                    height: 28,
                   ),
                 ],
               ),
               Column(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: 40),
+                    margin: EdgeInsets.only(left: 20),
                     //this container has log out button
                     width: 80,
                     child: ElevatedButton(

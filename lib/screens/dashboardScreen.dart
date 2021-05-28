@@ -42,7 +42,7 @@ class _State extends State<DashboardScreen> {
               Column(
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: 90),
+                    margin: EdgeInsets.only(left: 50),
                     //this container has log out button
                     width: 80,
                     child: ElevatedButton(
@@ -107,7 +107,7 @@ class _State extends State<DashboardScreen> {
                 Column(
                   children: [
                     Container(
-                      width: 200,
+                      width: 180,
                       height: 60,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(15),
@@ -138,7 +138,7 @@ class _State extends State<DashboardScreen> {
                   children: [
                     Container(
                       //this container has the button "I'm a donor"
-                      width: 200,
+                      width: 180,
                       height: 60,
 
                       child: ClipRRect(
@@ -177,7 +177,7 @@ class _State extends State<DashboardScreen> {
                 Column(
                   children: [
                     Container(
-                      width: 200,
+                      width: 180,
                       height: 60,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(15),
@@ -208,7 +208,7 @@ class _State extends State<DashboardScreen> {
                   children: [
                     Container(
                       //this container has the button "I'm a donor"
-                      width: 200,
+                      width: 180,
                       height: 60,
 
                       child: ClipRRect(
@@ -247,7 +247,7 @@ class _State extends State<DashboardScreen> {
                 Column(
                   children: [
                     Container(
-                      width: 200,
+                      width: 180,
                       height: 60,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(15),
@@ -278,7 +278,7 @@ class _State extends State<DashboardScreen> {
                   children: [
                     Container(
                       //this container has the button "I'm a donor"
-                      width: 200,
+                      width: 180,
                       height: 60,
 
                       child: ClipRRect(

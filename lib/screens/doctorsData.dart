@@ -20,7 +20,7 @@ class DoctorsData extends StatelessWidget {
               Image.asset(
                 'images/profilePic.png',
                 fit: BoxFit.contain,
-                height: 150,
+                height: 120,
               ),
             ],
           ),
